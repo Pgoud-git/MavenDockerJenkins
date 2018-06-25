@@ -1,0 +1,9 @@
+#.gitignore
+
+#Exclude java class
+
+*.class
+
+#Exclude executables
+
+*.exe
