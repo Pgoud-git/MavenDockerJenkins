@@ -13,5 +13,11 @@ pipeline {
 			  sh 'mvn clean install'
 			}
 		      }
+		stage('Docker Build') {
+		    agent any
+			steps {
+			  sh 'docker build -t goud1234567/docker_blues:latest .'
+			  }
+			  }
 		    }
 		  }
